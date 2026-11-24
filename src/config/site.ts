@@ -30,7 +30,7 @@ export const siteConfig = {
    * Ganti placeholder di bawah ini dengan tautan resmi Teras Makna.
    */
   links: {
-    whatsappCommunity: "https://chat.whatsapp.com/GANTI-DENGAN-LINK-GRUP-TERAS-MAKNA",
+    whatsappCommunity: "https://chat.whatsapp.com/IJiiPCezbb24PSAjhhNvwv",
     instagram: "https://instagram.com/terasmakna.id",
     email: "halo@terasmakna.id",
     github: "https://github.com/Teras-Makna",
