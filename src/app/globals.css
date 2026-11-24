@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="dark"] {
+  --bg-primary: #091a2e;
+  --bg-secondary: #0d223b;
+  --bg-elevated: #122c4a;
+  --bg-card: rgba(16, 40, 68, 0.62);
+  --bg-card-hover: rgba(20, 49, 82, 0.8);
+  --text-primary: #f4efe6;
+  --text-secondary: #b9c6d4;
+  --text-muted: #8296ac;
+  --accent-gold: #d4b46a;
+  --accent-gold-bright: #ebd08c;
+  --accent-gold-soft: rgba(212, 180, 106, 0.14);
+  --accent-teal: #4ba39e;
+  --accent-teal-soft: rgba(75, 163, 158, 0.15);
+  --border-subtle: rgba(212, 180, 106, 0.18);
+  --border-strong: rgba(212, 180, 106, 0.42);
+  --glow-gold: rgba(212, 180, 106, 0.22);
+  --nav-bg: rgba(9, 26, 46, 0.78);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg-primary: #f7f3eb;
+  --bg-secondary: #efe9dc;
+  --bg-elevated: #ffffff;
+  --bg-card: rgba(255, 253, 248, 0.82);
+  --bg-card-hover: rgba(255, 255, 255, 0.96);
+  --text-primary: #0e2640;
+  --text-secondary: #374e68;
+  --text-muted: #60748a;
+  --accent-gold: #9a782b;
+  --accent-gold-bright: #b79139;
+  --accent-gold-soft: rgba(154, 120, 43, 0.11);
+  --accent-teal: #1f6b68;
+  --accent-teal-soft: rgba(31, 107, 104, 0.11);
+  --border-subtle: rgba(14, 38, 64, 0.12);
+  --border-strong: rgba(154, 120, 43, 0.42);
+  --glow-gold: rgba(154, 120, 43, 0.16);
+  --nav-bg: rgba(247, 243, 235, 0.84);
+  color-scheme: light;
+}
+
+@theme inline {
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-display: var(--font-cinzel), var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::selection {
+  background-color: var(--accent-gold);
+  color: #091a2e;
+}
+
+/* Subtle sacred radial atmosphere */
+.bg-cosmic-glow {
+  background-image:
+    radial-gradient(ellipse 70% 50% at 50% 0%, var(--glow-gold), transparent 65%),
+    radial-gradient(ellipse 45% 35% at 85% 25%, var(--accent-teal-soft), transparent 65%);
+}
+
+/* Glass editorial surface */
+.surface-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.surface-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-strong);
+}
+
+/* Gold gradient text */
+.text-gold-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--accent-gold-bright) 0%,
+    var(--accent-gold) 55%,
+    var(--accent-gold-bright) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
