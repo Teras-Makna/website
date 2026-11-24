@@ -119,7 +119,18 @@ export const siteConfig = {
         label: "Suasana Ruang",
         value: "Setara, Cair, Tanpa Sekat Senioritas",
       },
+      {
+        label: "Identitas Anggota",
+        value: "Email Komunitas username@terasmakna.id",
+      },
     ],
+    memberEmailBenefit: {
+      badge: "Identitas Resmi Anggota",
+      title: "Dapatkan Email Komunitas Pribadi",
+      example: "username@terasmakna.id",
+      description:
+        "Setiap sahabat yang bergabung bersama Teras Makna berkesempatan mendapatkan alamat email khusus berakhiran @terasmakna.id — sebagai identitas personal untuk korespondensi, publikasi esai, dan kolaborasi lintas karya di dalam ekosistem kami.",
+    },
     topics: [
       "Kesadaran & Pikiran Manusia",
       "Neurosains & Refleksi Batin",

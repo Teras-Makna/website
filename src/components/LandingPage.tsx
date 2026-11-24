@@ -123,9 +123,12 @@ export function LandingPage() {
                 className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center"
               >
                 <a
-                  href="#gabung"
+                  href={siteConfig.links.whatsappCommunity}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-[var(--accent-gold)] px-6 py-3.5 text-sm font-semibold text-[#091a2e] shadow-[0_0_28px_var(--glow-gold)] transition-all hover:scale-[1.02] hover:opacity-95"
                 >
+                  <MessageCircle className="h-4 w-4" />
                   Gabung Lingkar Kopdar
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
@@ -533,7 +536,25 @@ export function LandingPage() {
                   untuk saling mendengarkan.
                 </p>
 
-                <div className="mt-8 space-y-3">
+                {/* Member Email Benefit Card */}
+                <div className="mt-6 rounded-2xl border border-[var(--border-strong)] bg-[var(--accent-gold-soft)] p-5">
+                  <div className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--accent-gold)]">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    {siteConfig.kopdar.memberEmailBenefit.badge}
+                  </div>
+                  <h3 className="mt-2 font-serif text-xl font-semibold text-[var(--text-primary)]">
+                    {siteConfig.kopdar.memberEmailBenefit.title}
+                  </h3>
+                  <div className="mt-2 inline-flex items-center gap-2 rounded-lg border border-[var(--border-strong)] bg-[var(--bg-primary)]/80 px-3 py-1.5 font-mono text-xs text-[var(--accent-gold-bright)]">
+                    <Mail className="h-3.5 w-3.5 text-[var(--accent-gold)]" />
+                    {siteConfig.kopdar.memberEmailBenefit.example}
+                  </div>
+                  <p className="mt-3 text-xs leading-relaxed text-[var(--text-secondary)] sm:text-sm">
+                    {siteConfig.kopdar.memberEmailBenefit.description}
+                  </p>
+                </div>
+
+                <div className="mt-6 space-y-3">
                   <a
                     href={siteConfig.links.whatsappCommunity}
                     target="_blank"
