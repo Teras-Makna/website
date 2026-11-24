@@ -269,12 +269,13 @@ export function LandingPage() {
                 02 · Peta Jejaring Makna
               </span>
               <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-[var(--text-primary)] sm:text-5xl">
-                Ketika <span className="italic text-[var(--accent-gold)]">Sains, Filsafat, Spiritualitas</span> &amp; Karya Saling Terhubung
+                Ketika <span className="italic text-[var(--accent-gold)]">Sains, Filsafat, Psikologi, Spiritualitas</span> &amp; Karya Saling Terhubung
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-[var(--text-secondary)] sm:text-base">
-                Kami memandang pengetahuan bukan sebagai kotak-kotak terpisah,
-                melainkan graf jejaring yang saling menyapa di sekitar poros
-                kesadaran. Sentuh tiap simpul untuk melihat keterhubungannya.
+                Kami memandang pengetahuan dan penyembuhan diri bukan sebagai
+                kotak-kotak terpisah, melainkan graf jejaring bertingkat yang
+                saling menyapa di sekitar poros kesadaran. Sentuh tiap bidang
+                untuk membuka cabang sub-simpul di dalamnya.
               </p>
             </Reveal>
 
